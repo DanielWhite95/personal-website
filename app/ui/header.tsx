@@ -12,6 +12,7 @@ const sections = [
     label: "Personal Projects",
     shortLabel: "Projects",
   },
+  { id: "career", label: "Career", shortLabel: "Career" },
 ] as const;
 
 type SectionId = (typeof sections)[number]["id"];

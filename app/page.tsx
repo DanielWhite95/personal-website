@@ -1,9 +1,14 @@
+import { career } from "@/app/lib/career";
 import { projects } from "@/app/lib/projects";
+import { CareerTimeline } from "@/app/ui/career-timeline";
 import { ProjectsCarousel } from "@/app/ui/projects-carousel";
 import { Typewriter } from "@/app/ui/typewriter";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const skills = [
+  "Python",
+  "FastAPI",
+  "MCP",
   "TypeScript",
   "React",
   "Next.js",
@@ -17,14 +22,14 @@ const skills = [
 const socialLinks = [
   {
     label: "GitHub",
-    href: "https://github.com/your-username",
+    href: "https://github.com/DanielWhite95",
     icon: (
       <FaGithub/>
     ),
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/your-username",
+    href: "https://www.linkedin.com/in/daniele-marsella-b5548117b",
     icon: (
       <FaLinkedin/>
     ),
@@ -39,16 +44,13 @@ export default function Home() {
         className="scroll-mt-24 border-b-4 border-foreground"
       >
         <div className="mx-auto w-full max-w-5xl px-5 py-20 sm:px-8 sm:py-28">
-          <p className="inline-flex items-center gap-2 border-4 border-foreground bg-background px-3 py-1.5 font-mono text-sm font-medium text-foreground">
-            <span aria-hidden="true" className="select-none">~/</span>
-            Hi, I’m Daniele
+          <p className="font-mono text-sm font-semibold uppercase tracking-[0.18em] text-foreground">
+            <span aria-hidden="true" className="select-none text-zinc-400 dark:text-zinc-500">$ </span>
+            whomai
           </p>
-
           <h1 className="mt-6 max-w-3xl font-mono text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            <span aria-hidden="true" className="select-none text-zinc-400 dark:text-zinc-500">
-              ${" "}
-            </span>
-            <Typewriter text="I build things for the web, and I enjoy the process." />
+	    <Typewriter text={`Hi I'm Daniele.
+	    I am software engineer that loves building stuff.`} />
           </h1>
 
           <div className="mt-8 max-w-2xl space-y-5 text-base leading-8 text-zinc-700 dark:text-zinc-300 sm:text-lg">
@@ -111,6 +113,9 @@ export default function Home() {
           <ProjectsCarousel projects={projects} />
         </div>
       </section>
+
+      <CareerTimeline entries={career} />
+
 
       <footer className="border-t-4 border-foreground">
         <div className="mx-auto flex w-full max-w-5xl flex-col gap-4 px-5 py-8 font-mono text-sm text-zinc-600 sm:flex-row sm:items-center sm:justify-between sm:px-8 dark:text-zinc-400">
