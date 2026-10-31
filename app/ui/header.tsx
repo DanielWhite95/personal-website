@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { MouseEvent } from "react";
+import { withBasePath } from "../lib/base-path";
+import Image from "next/image";
 
 const sections = [
   { id: "who-am-i", label: "Who Am I", shortLabel: "About" },
@@ -88,17 +90,19 @@ export function Header() {
     <header
       ref={headerRef}
       id="top"
-      className="sticky top-0 z-50 border-b border-black/[.08] bg-background/80 backdrop-blur-md dark:border-white/[.145]"
+      className="sticky top-0 z-50 border-b-4 border-foreground bg-background"
     >
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
         <a
           href="#top"
           onClick={(event) => scrollToTarget(event, "top")}
-          className="flex items-center gap-2.5 font-semibold tracking-tight"
+          className="flex items-center gap-2.5 font-mono font-semibold tracking-tight"
         >
-          <span className="flex size-8 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 text-xs font-bold text-white">
-            DM
-          </span>
+          <Image className="flex size-8 items-center justify-center border-4 border-foreground bg-foreground text-xs font-bold text-background"
+          src={withBasePath("/profile.jpg")}
+          width={460}
+          height={460}
+          />
           <span className="hidden sm:inline">Daniele</span>
         </a>
 
@@ -113,10 +117,10 @@ export function Header() {
                     href={`#${section.id}`}
                     onClick={(event) => scrollToTarget(event, section.id)}
                     aria-current={isActive ? "true" : undefined}
-                    className={`block rounded-full px-3 py-2 text-sm font-medium whitespace-nowrap transition-colors sm:px-4 ${
+                    className={`block border-4 px-3 py-2 font-mono text-sm font-medium whitespace-nowrap transition-colors sm:px-4 ${
                       isActive
-                        ? "bg-black/[.06] text-zinc-950 dark:bg-white/[.1] dark:text-zinc-50"
-                        : "text-zinc-600 hover:bg-black/[.04] hover:text-zinc-950 dark:text-zinc-400 dark:hover:bg-white/[.06] dark:hover:text-zinc-50"
+                        ? "border-foreground bg-foreground text-background"
+                        : "border-transparent text-zinc-600 hover:border-foreground hover:text-foreground dark:text-zinc-400"
                     }`}
                   >
                     <span className="sm:hidden">{section.shortLabel}</span>
