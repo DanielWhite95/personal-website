@@ -99,6 +99,7 @@ export function Header() {
           className="flex items-center gap-2.5 font-mono font-semibold tracking-tight"
         >
           <Image className="flex size-8 items-center justify-center border-4 border-foreground bg-foreground text-xs font-bold text-background"
+          alt="Profile logo"
           src={withBasePath("/profile.jpg")}
           width={460}
           height={460}
