@@ -57,10 +57,6 @@ export default function Home() {
 
         <div className="relative mx-auto w-full max-w-5xl px-5 py-20 sm:px-8 sm:py-28">
           <p className="inline-flex items-center gap-2 rounded-full border border-black/[.08] bg-white/70 px-3 py-1.5 text-sm font-medium text-zinc-700 backdrop-blur dark:border-white/[.12] dark:bg-white/[.04] dark:text-zinc-300">
-            <span className="relative flex size-2">
-              <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-500 opacity-70" />
-              <span className="relative inline-flex size-2 rounded-full bg-emerald-500" />
-            </span>
             Hi, I’m Daniele
           </p>
 

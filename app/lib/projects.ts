@@ -13,43 +13,23 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Habit Tracker",
+    title: "SuperMauroBros",
     description:
-      "A small app for building daily habits, with streaks, reminders and a yearly heatmap. Built to learn more about offline-first data syncing.",
-    href: "https://github.com/your-username/habit-tracker",
-    tags: ["Next.js", "TypeScript", "Postgres"],
-    year: "2025",
-    emoji: "🌱",
-    gradient: "from-emerald-500 to-teal-600",
-  },
-  {
-    title: "Weather Dashboard",
-    description:
-      "A clean weather dashboard that compares forecasts from multiple providers and tells you which one to trust for the next few hours.",
-    href: "https://github.com/your-username/weather-dashboard",
-    tags: ["React", "APIs", "Charts"],
+      "A computer graphics project to learn WebGL, with custom shaders and a hand-rolled rendering pipeline.",
+    href: "https://danielwhite95.github.io/SuperMauroBros/",
+    tags: ["WebGL", "GLSL", "JavaScript"],
     year: "2024",
-    emoji: "🌤️",
-    gradient: "from-sky-500 to-indigo-600",
+    emoji: "🎮",
+    gradient: "from-rose-500 to-orange-600",
   },
   {
-    title: "Recipe Box",
+    title: "Learn To Fly",
     description:
-      "A personal cookbook where I can save recipes from the web, scale ingredients and generate a shopping list for the week.",
-    href: "https://github.com/your-username/recipe-box",
-    tags: ["Node.js", "SQLite", "PWA"],
+      "An experiment to learn Rust by implementing a genetic algorithm that evolves agents to fly through a course.",
+    href: "https://danielwhite95.github.io/learn-to-fly-rs",
+    tags: ["Rust", "Genetic Algorithms", "Simulation"],
     year: "2024",
-    emoji: "🍳",
-    gradient: "from-orange-500 to-rose-600",
-  },
-  {
-    title: "Home Lab",
-    description:
-      "My self-hosted corner of the internet: a small server running containers for backups, media, dashboards and a lot of experiments.",
-    href: "https://github.com/your-username/home-lab",
-    tags: ["Docker", "Linux", "Self-hosting"],
-    year: "2023",
-    emoji: "🛠️",
-    gradient: "from-violet-500 to-fuchsia-600",
+    emoji: "🦀",
+    gradient: "from-orange-600 to-amber-500",
   },
 ];
