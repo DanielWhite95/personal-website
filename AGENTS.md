@@ -1,3 +1,10 @@
+# Personal Website
+
+This project contains the NextJS code to build my personal website about my hobbies and personal projects.
+It is used to share publicly what I worked on and what are my next projects
+
+
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 ## This is NOT the Next.js you know
