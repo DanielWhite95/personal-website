@@ -46,7 +46,7 @@ export default function Home() {
         <div className="mx-auto w-full max-w-5xl px-5 py-20 sm:px-8 sm:py-28">
           <p className="font-mono text-sm font-semibold uppercase tracking-[0.18em] text-foreground">
             <span aria-hidden="true" className="select-none text-zinc-400 dark:text-zinc-500">$ </span>
-            whomai
+            whoami
           </p>
           <h1 className="mt-6 max-w-3xl font-mono text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
 	    <Typewriter text={`Hi I'm Daniele.
